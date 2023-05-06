@@ -8,8 +8,8 @@ add_executable(raytracer02
     main.cpp)
 
 target_include_directories(raytracer02 PRIVATE
-    ${CMAKE_SOURCE_DIR}/maths
-    ${CMAKE_SOURCE_DIR}/utils
+    ${CMAKE_SOURCE_DIR}/RayTracer/maths
+    ${CMAKE_SOURCE_DIR}/RayTracer/utils
     ${CMAKE_SOURCE_DIR}/external)
 
 # link cmath library
