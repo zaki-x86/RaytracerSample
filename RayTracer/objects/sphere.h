@@ -4,6 +4,11 @@
 #include "hittable.h"
 #include "../maths/vec3.h"
 
+/**
+ * @brief A sphere object
+ * 
+ * 
+ */
 class sphere : public hittable {
     public:
         sphere() {}
@@ -25,7 +30,7 @@ bool sphere::hit(const ray& r, double t_min, double t_max, hit_record& rec) cons
     auto half_b = dot(oc, r.direction());
     auto c = oc.length_squared() - radius*radius;
 
-    auto discriminant = half_b*half_b - a*c;
+    auto discriminant = half_b * half_b - a * c;
     if (discriminant < 0) return false;
     auto sqrtd = sqrt(discriminant);
 
