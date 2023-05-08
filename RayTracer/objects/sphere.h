@@ -7,7 +7,6 @@
 /**
  * @brief A sphere object
  * 
- * 
  */
 class sphere : public hittable {
     public:
